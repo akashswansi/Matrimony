@@ -4,6 +4,7 @@
 use **development** branch
 git clone https://github.com/akashswansi/Matrimonial.git
 cd Matrimonial
+git checkout development
 open Matrimonial.xcodeproj
 
 ##SPM with Xcode
