@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "44C51E89-3CF6-4C6F-8644-22142460272D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Matrimonial.xcodeproj",
+      "identifier" : "6B4753572E8AAF27007362F7",
+      "name" : "Matrimonial"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:Matrimonial.xcodeproj",
+        "identifier" : "6B47536C2E8AAF29007362F7",
+        "name" : "MatrimonialTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Matrimonial.xcodeproj",
+        "identifier" : "6B4753762E8AAF29007362F7",
+        "name" : "MatrimonialUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
