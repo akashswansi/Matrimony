@@ -23,20 +23,3 @@ enum MatrimonyAPIError: Error, LocalizedError {
     }
   }
 }
-
-enum MatrimonyLocalDataError: LocalizedError {
-  case fetchFailed(Error)
-  case saveFailed(Error)
-  case updateFailed(Error)
-  
-  var errorDescription: String? {
-    switch self {
-    case .fetchFailed(let error):
-      return "Failed to fetch profiles: \(error.localizedDescription)"
-    case .saveFailed(let error):
-      return "Failed to save profiles: \(error.localizedDescription)"
-    case .updateFailed(let error):
-      return "Failed to update status: \(error.localizedDescription)"
-    }
-  }
-}

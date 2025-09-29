@@ -21,7 +21,6 @@ final class PersistenceController: ObservableObject {
   let container: NSPersistentContainer
   @Published var initializationError: Error?
   
-  // Use lazy to avoid init ordering issues
   lazy var contextDidSavePublisher: AnyPublisher<Notification, Never> = {
     NotificationCenter.default
       .publisher(for: .NSManagedObjectContextDidSave, object: container.viewContext)
